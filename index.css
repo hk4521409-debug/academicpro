@@ -1,0 +1,100 @@
+/* ===========================
+   RESET + GLOBAL BASE
+=========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* ===========================
+   BODY DEFAULTS
+=========================== */
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f3f4f6; /* matches bg-gray-100 */
+  color: #111827; /* matches text-gray-900 */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===========================
+   ROOT APP CONTAINER
+=========================== */
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===========================
+   FORM ELEMENT FIX
+=========================== */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* ===========================
+   LINK FIX
+=========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   IMAGE FIX
+=========================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===========================
+   SCROLL BEHAVIOR
+=========================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   CUSTOM SELECTION COLOR
+=========================== */
+
+::selection {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+/* ===========================
+   TRANSITION SMOOTHNESS
+=========================== */
+
+button,
+input,
+.card,
+div {
+  transition: all 0.2s ease-in-out;
+}
